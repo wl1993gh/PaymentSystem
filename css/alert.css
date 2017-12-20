@@ -1,0 +1,5 @@
+html,body{background: #f4f4f4;margin: 0 auto;text-align: center;}
+.box{margin:calc(337rem/75) auto;}
+.box img{height: calc(150rem/75);}
+.body{margin-top: calc(34rem/75);color: #666;font-size: calc(34rem/75);line-height: calc(58rem/75);}
+.body p{color: #999;}

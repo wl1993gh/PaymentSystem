@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+	    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	    <meta name="format-detection" content="telephone=no" />
+	    <meta name="format-detection" content="email=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta http-equiv="Content-Type" content="text/html">
+	    <meta name="msapplication-tap-highlight" content="no">
+	    <meta name="x5-cache" content="disable">
+   		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+   		<link rel="stylesheet" type="text/css" href="css/globle.css"/>
+   		<link rel="stylesheet" type="text/css" href="css/PaymentSystem.css"/>
+	</head>
+	<body>
+		<div class="pay-box">
+			<div class="pay-top">
+				<img src="img/logo.png"/>
+				<p>悠车位线下临时停车缴费系统</p>
+			</div>
+			<div class="pay-content">
+				<p class="con-p">请输入你的车牌号</p>
+				<div class="input-box">
+					<div class="input-items">陕<div class="trangle"></div></div>
+					<div class="input-items"></div>
+					<div class="input-items"></div>
+					<div class="input-items"></div>
+					<div class="input-items"></div>
+					<div class="input-items"></div>
+					<div class="input-items"></div>
+					<div class="input-items items-last" style="display: none;"></div>
+				</div>
+				<div class="new"><input name="new" type="radio" value="新能源车辆" /> 新能源车辆 
+					<img class="choose" src="img/tab_icon_chose1 @3x.png"/>
+				</div> 
+				<div class="clear"></div>
+				<input type="button" value="缴费" />
+				<div class="pay-price">
+					<div class="price-head"><img src="img/tab_icon_home_spot@3x.png"/>分时段收费价格</div>
+					<div class="price-body">
+						<div class="price-items">
+							<div class="left">&nbsp;08:30-12:00</div>
+							<div class="right">3元/小时</div>
+						</div>
+						<div class="price-items">
+							<div class="left">&nbsp;12:00-24:00</div>
+							<div class="right">4元/小时</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pay-bottom">
+				<div class="bot-left"></div>
+				<div class="bot-middle"><div class="round1"></div><div class="round2"></div><div class="round3"></div></div>
+				<div class="bot-right"></div>
+			</div>
+			<footer>
+				<div class="message">
+					<div class="mess-left">陕ICP备17008942号</div>
+					<div class="mess-right">电话：029-68202031</div>
+				</div>
+				<div>© 2017 Copyright 陕西纬象科技有限公司 版权所有</div>
+			</footer>
+		</div>
+		<div class="blur"></div>
+		<div class="bottom">
+			<div class="first">确定</div>
+			<div class="content">
+				<div class="text">京</div><div class="text">沪</div>
+				<div class="text">鄂</div><div class="text">湘</div>
+				<div class="text">川</div><div class="text">渝</div>
+				<div class="text">粤</div><div class="text">闽</div>
+				<div class="text">晋</div><div class="text">黑</div>
+				<div class="text">津</div><div class="text">浙</div>
+				<div class="text">豫</div><div class="text">赣</div>
+				<div class="text">贵</div><div class="text">青</div>
+				<div class="text">琼</div><div class="text">宁</div>
+				<div class="text">吉</div><div class="text">蒙</div>
+				<div class="text">冀</div><div class="text">苏</div>
+				<div class="text">皖</div><div class="text">桂</div>
+				<div class="text">云</div><div class="text">陕</div>
+				<div class="text">甘</div><div class="text">藏</div>
+				<div class="text">新</div><div class="text">辽</div>
+				<div class="text">鲁</div>
+				<div class="del"><img src="img/icon_keyboard_delete.png"/></div>
+			</div>
+		</div>
+		<div class="bottom1"></div>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oBott=$('.bottom'),oBott1=$('.bottom1');
+				var con='<div class="first">确定</div>'+
+				'<div class="content">'+
+					'<div class="text1">0</div>'+'<div class="text1">1</div>'+
+					'<div class="text1">2</div>'+'<div class="text1">3</div>'+
+					'<div class="text1">4</div>'+'<div class="text1">5</div>'+
+					'<div class="text1">6</div>'+'<div class="text1">7</div>'+
+					'<div class="text1">8</div>'+'<div class="text1">9</div>'+
+					'<div class="text1">Q</div>'+'<div class="text1">W</div>'+
+					'<div class="text1">E</div>'+'<div class="text1">R</div>'+
+					'<div class="text1">T</div>'+'<div class="text1">Y</div>'+
+					'<div class="text1">U</div>'+'<div class="text1">I</div>'+
+					'<div class="text1">O</div>'+'<div class="text1">P</div>'+
+					'<div class="text1">A</div>'+'<div class="text1">S</div>'+
+					'<div class="text1">D</div>'+'<div class="text1">F</div>'+
+					'<div class="text1">G</div>'+'<div class="text1">H</div>'+
+					'<div class="text1">J</div>'+'<div class="text1">K</div>'+
+					'<div class="text1">L</div>'+'<div class="text1">Z</div>'+
+					'<div class="text1">X</div>'+'<div class="text1">C</div>'+
+					'<div class="text1">V</div>'+'<div class="text1">B</div>'+
+					'<div class="text1">N</div>'+'<div class="text1">M</div>'+
+					'<div class="text1">港</div>'+'<div class="text1">澳</div>'+
+					'<div class="del"><img src="img/icon_keyboard_delete.png"/></div>'+
+				'</div>';
+				
+				$('.bottom1').append(con);
+				choose();
+				Radio();
+				function choose(){
+					var choose = $('.choose').css('display');
+					$('.input-items').on('touchstart',function(){
+						num = $(this).index();
+						$(this).append('<div class="active"></div>');
+						$(this).siblings().children('.active').remove();
+						if(num==0){
+							oBott.fadeIn();
+							oBott1.fadeOut();
+						}else{
+							oBott.fadeOut();
+							oBott1.fadeIn();
+						}
+					});
+						$('.bottom .text').on('touchstart',function(){
+							if($(".input-items").eq(0).children().hasClass("active")){
+								var tex = $(this).text();
+								$('.input-items').eq(0).html(tex);
+								$('.input-items').eq(0).css('textAlign','center');
+								$('.input-items').eq(1).append('<div class="active"></div>');
+							    $('.input-items').eq(1).siblings().children('.active').remove();
+							    oBott.fadeOut();
+							    oBott1.fadeIn();
+							    num=1;
+							}
+						});
+						$('.bottom1 .text1').on('touchstart',function(){
+							if($(".input-items").eq(num).children().length>0){
+								var tex = $(this).text();
+								$('.input-items').eq(num).html(tex);
+								$('.input-items').eq(parseInt(num+1)).append('<div class="active"></div>');
+							    $('.input-items').eq(parseInt(num+1)).siblings().children('.active').remove();
+							    oBott.fadeOut();
+							    oBott1.fadeIn();
+							    num+=1;
+							}
+					});
+					
+					$('.del').on('touchstart',function(){
+							$('.input-items').eq(num).html('');
+							$('.input-items').eq(parseInt(num-1)).append('<div class="active"></div>');
+							$('.input-items').eq(parseInt(num-1)).siblings().children('.active').remove();
+							
+							num--;
+							if(num==0){
+								oBott.fadeIn();
+								oBott1.fadeOut();
+						   }else if(num<0){
+						   		num = 0;
+								oBott.fadeOut();
+								oBott1.fadeOut();
+								$('.input-items').children('.active').remove();
+						   }
+						
+					});
+				}
+				$('.first').on('touchend',function(){
+					$(this).parent().fadeOut();
+				});
+				function Radio(){
+					$('.new').on('touchstart',function(){
+					var choose = $('.choose').css('display');
+					if(choose=='none'){
+						$('.input-items:nth-of-type(7)').css('borderRight','calc(0.01rem/75) solid #666');
+						$('.input-items').on('touchstart',function(){
+							$('.active').css('width','calc(70rem/75)');
+						});
+						$('.choose').show();
+						$('.input-items').show();
+						if($('.input-items').eq(6).html()!=''){
+							$('.input-items').eq(7).html('');
+							$('.input-items').eq(7).append('<div class="active"></div>');
+							$('.input-items').eq(7).siblings().children('.active').remove();
+							oBott.fadeOut();
+							oBott1.fadeIn();
+							num=7;
+						}
+						$('.active').css('width','calc(70rem/75)');
+						choose = false;
+					}else{
+						$('.input-items:nth-of-type(7)').css('borderRight','none');
+						$('.input-items').on('touchstart',function(){
+							$('.active').css('width','calc(80rem/75)');
+						})
+						$('.choose').hide();
+						$('.items-last').hide();
+						$('.active').css('width','calc(80rem/75)');
+						choose = true;
+					}
+					});
+				}
+			}
+			
+		</script>
+	</body>
+</html>
